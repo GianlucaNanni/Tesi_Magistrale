@@ -1,1 +1,109 @@
-a
+% Dichiare il tipo di documento(classe) che si usa: article
+% Stabilire la grandezza del carattere: pag. A4 e dimensione testo principare 12pt
+\documentclass[a4paper,12pt]{article}
+
+%Bordi
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+%Interlinea
+\usepackage{setspace}
+\onehalfspacing %(interlinea da 1.5)
+
+% Anche LaTex(come R) usa pacchetti: 
+% Pacchetto: [utf8]{inputenc}, fornisce una gamma particolare di caratteri
+\usepackage[utf8]{inputenc}
+
+% Pacchetto: graphicx, per le parti grafiche
+\usepackage{graphicx}
+
+% Pacchetto: hyperref, ovunque si usa ref c'è la possibilità di passare all'immagine successiva
+\usepackage{hyperref}
+
+% Pacchetto: natbib, serve per inserire le citazioni/bibliografia
+\usepackage{natbib}
+
+% Pacchetto: color, per cambiare colore al testo
+\usepackage{color}
+
+% Pacchetto: {lineno}, per inserire i numeri di riga
+\usepackage{lineno}
+% Funzione: linenumbers, inserisce i numeri di riga
+% \linenumbers
+
+\usepackage{listings}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+%\usepackage[utf8]{inputenc} 
+\usepackage{url}
+\usepackage{float}
+\usepackage{amsmath,amsthm}
+%\usepackage{hyperref}
+\usepackage{subfiles}
+\usepackage[backend=biber,sorting=none]{biblatex}
+
+% Pacchetto per Abstract in inglese
+%\usepackage[italian, english]{babel}
+
+
+
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+{{\Large{\textsc{Alma Mater Studiorum
+\\
+\medskip
+Universit\`a di Bologna}}}} 
+\rule[0.1cm]{14cm}{0.1mm}
+\rule[0.5cm]{14cm}{0.6mm}
+{\small{\bf Dipartimento di Scienze Biologiche, Geologiche e Ambientali - BiGeA\\
+Corso di Laurea Magistrale in Scienze e Gestione della Natura}}
+\end{center}
+\vspace{30mm}
+\begin{center}
+{\LARGE{\bf TITOLO}}\\
+\vspace{3mm}
+{\LARGE{\bf SOTTOTITOLO}}\\
+\end{center}
+\vspace{40mm}
+\par
+\noindent
+\begin{minipage}[t]{0.47\textwidth}
+{\normalsize{\bf Relatore:\\
+Prof.ssa Marta Galloni}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\textwidth}\raggedleft
+{\normalsize{\bf Candidato:\\
+Gianluca Nanni}}
+\end{minipage}
+\vspace{30mm}
+\begin{center}
+{\normalsize{\bf Anno di laurea: 2021-2022\\
+Appello: / }}%inserire DATA APPELLO
+\end{center}
+\end{titlepage}
+
+% Pagina vuota
+\clearpage
+\null
+\thispagestyle{empty}
+\clearpage
+
+% Indice
+\tableofcontents
+\clearpage
+
+%Abstract
+%\input{Sommario.txt}
+
+\input{2_Obbiettivo della tesi.txt}
+
+
+
+\end{document}
