@@ -45,10 +45,13 @@
 \usepackage{subfiles}
 \usepackage[backend=biber,sorting=none]{biblatex}
 
+\newcommand{\nil}{[\:]}
+
 % Pacchetto per Abstract in inglese
 %\usepackage[italian, english]{babel}
 
-
+% Times New Roman 
+\usepackage{times}
 
 
 
@@ -75,7 +78,9 @@ Corso di Laurea Magistrale in Scienze e Gestione della Natura}}
 \noindent
 \begin{minipage}[t]{0.47\textwidth}
 {\normalsize{\bf Relatore:\\
-Prof.ssa Marta Galloni}}
+Prof.ssa Marta Galloni}}\vspace{0.5cm}\\
+{\normalsize{\bf Correlatrice:\\
+Dr.ssa Rosa Ranalli}}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.47\textwidth}\raggedleft
@@ -98,12 +103,6 @@ Appello: / }}%inserire DATA APPELLO
 % Indice
 \tableofcontents
 \clearpage
-
-%Abstract
-%\input{Sommario.txt}
-
-\input{2_Obbiettivo della tesi.txt}
-
 
 
 \end{document}
