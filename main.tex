@@ -1,0 +1,154 @@
+% Dichiare il tipo di documento(classe) che si usa: article
+% Stabilire la grandezza del carattere: pag. A4 e dimensione testo principare 12pt
+\documentclass[a4paper,12pt]{article}
+
+%Bordi
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+%Interlinea
+\usepackage{setspace}
+\onehalfspacing %(interlinea da 1.5)
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{color}
+\usepackage{lineno}
+% Funzione: linenumbers, inserisce i numeri di riga
+% \linenumbers
+
+\usepackage{listings}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{multicol}
+\usepackage[italian]{babel}
+\usepackage{url}
+\usepackage{float}
+\usepackage{amsmath,amsthm}
+\usepackage{subfiles}
+\usepackage{caption}
+\usepackage{multirow}
+
+
+%\usepackage[backend=biber,sorting=none]{biblatex}
+
+
+\newcommand{\nil}{[\:]}
+
+% Pacchetto per Abstract in inglese
+%\usepackage[italian, english]{babel}
+
+% Times New Roman 
+\usepackage{times}
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+{{\Large{\textsc{Alma Mater Studiorum
+\\
+\medskip
+Universit\`a di Bologna}}}} 
+\rule[0.1cm]{14cm}{0.1mm}
+\rule[0.5cm]{14cm}{0.6mm}
+{\small{\bf Dipartimento di Scienze Biologiche, Geologiche e Ambientali - BiGeA\\
+Corso di Laurea Magistrale in Scienze e Gestione della Natura}}
+\end{center}
+\vspace{30mm}
+\begin{center}
+{\LARGE{\bf Utilità delle collezioni di erbario per il monitoraggio delle interazioni tra piante e impollinatori}}\\
+\vspace{3mm}
+%{\LARGE{\bf SOTTOTITOLO}}\\
+\end{center}
+\vspace{40mm}
+\par
+\noindent
+\begin{minipage}[t]{0.47\textwidth}
+{\normalsize{\bf Relatore:\\
+Prof.ssa Marta Galloni}}\vspace{0.5cm}\\
+{\normalsize{\bf Correlatori:\\
+Dr. Umberto Mossetti, \\Dr.ssa Rosa Ranalli, \\Dr.ssa Laura Zavatta}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\textwidth}\raggedleft
+{\normalsize{\bf Candidato:\\
+Gianluca Nanni}}
+\end{minipage}
+\vspace{30mm}
+\begin{center}
+{\normalsize{\bf Anno di laurea: 2021-2022\\
+Appello: 5 Ottobre 2022 }}
+\end{center}
+\end{titlepage}
+
+% Pagina vuota
+\clearpage
+\null
+\thispagestyle{empty}
+\clearpage
+
+% Indice
+\tableofcontents
+\thispagestyle{empty} %Toglie numero pag.
+\clearpage
+
+% Pagina vuota
+\clearpage
+\null
+\thispagestyle{empty}
+\clearpage
+
+%SUBFILE
+\subfile{0.Obiettivo_della_tesi/Obiettivo_della_tesi}
+\subfile{1.Introduzione/Funzione_dell_Erbario}
+\subfile{1.Introduzione/Cenni_storici}
+\subfile{1.Introduzione/Importanza_delle_collezioni_naturalistiche}
+\subfile{1.Introduzione/Collezioni_botaniche}
+\subfile{1.Introduzione/Collezioni_entomologiche}
+\subfile{1.Introduzione/Digitalizzazione}
+\subfile{1.Introduzione/Interazioni}
+\subfile{1.Introduzione/Importanza_impollinatori}
+\subfile{1.Introduzione/Vita_sociale}
+\subfile{1.Introduzione/Ricompense_fiorali}
+\subfile{1.Introduzione/Api_selvatiche_Italia}
+\subfile{1.Introduzione/Servizio_impollinazione}
+\subfile{1.Introduzione/Strategie_attrazione}
+\subfile{1.Introduzione/Monitoraggio}
+
+\subfile{2.Metodi/Progetto_BeeNet}
+\subfile{2.Metodi/Area_studio}
+\subfile{2.Metodi/Campionamento}
+\subfile{2.Metodi/Criteri}
+\subfile{2.Metodi/Erbario_Generale}
+\subfile{2.Metodi/Rare_endemiche}
+\subfile{2.Metodi/Costruzione_dataset}
+\subfile{2.Metodi/IS_AI_ES}
+\subfile{2.Metodi/Macroregioni}
+\subfile{2.Metodi/Api_selvatiche_ER}
+\subfile{2.Metodi/Costruzione_Network}
+\subfile{2.Metodi/Modularita_ER}
+
+\subfile{3.Risultati/Flora_entomofila}
+\subfile{3.Risultati/Idonee_erborizzazione}
+\subfile{3.Risultati/Rare_endemiche_2}
+\subfile{3.Risultati/Comparazione_ES}
+\subfile{3.Risultati/Taxa_BeeNet}
+\subfile{3.Risultati/Diversita_AI_ES}
+\subfile{3.Risultati/Diversita_macro}
+\subfile{3.Risultati/Numero_api_ER}
+\subfile{3.Risultati/Network_ER}
+\subfile{3.Risultati/Rete_ER}
+
+\subfile{4.Conclusioni/Conclusioni}
+
+\subfile{5.Riferimenti/biblio.bib}
+\subfile{5.Riferimenti/sito}
+
+\subfile{7.Appendice/Appendice1}
+\subfile{7.Appendice/Appendice2}
+\subfile{7.Appendice/Appendice3}
+\subfile{7.Appendice/Appendice4}
+
+\end{document}
